@@ -1,0 +1,161 @@
+HTML{
+    width: 100%;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #6e07b3;
+    width: 100%;
+    height: 100%;
+    margin: 0px; 
+    padding: 0px;
+}
+span{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+	font-family: 'Ostrovsky'; 
+	src: url('ofont.ru_Ostrovsky.ttf'); 
+}
+@font-face {
+	font-family: 'Manrope'; 
+	src: url('ofont.ru_Manrope.ttf'); 
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(40deg, #6e07b3 0%, 
+    #5b07a0 46%, 
+    #570997  100%);
+    z-index: 0;
+    pointer-events: none;
+}
+.glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.glass li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: spin 5s linear infinite;
+    bottom: -150px;
+}
+.glass li:nth-child(1) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+.glass li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.glass li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.glass li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.glass li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.glass li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.glass li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.glass li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.glass li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.glass li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@media(max-width:960px) {
+    .for-large-screens {
+      display:none;
+    }
+    li { color: #bbc3c8; font-family: 'Manrope'; font-size: 15px; line-height: 26px; text-indent: 30px; margin: 0; }
+    h1 { color: #bbc3c8; font-family: 'Ostrovsky';  margin: 0; }
+    h2 { color: #bbc3c8; font-family: 'Ostrovsky';  margin: 0; }
+  }
+@keyframes spin {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}   
+@media(min-width:480px) {
+    .for-small-screens {
+      display:none;
+      
+    }
+    li { color: #bbc3c8; font-family: 'Manrope', sans-serif; font-size: 49px; line-height: 90px; text-indent: 30px; margin: 0; }
+    h1 { color: #bbc3c8; font-family:'Manrope', sans-serif;  margin: 0; font-size: 74px; }
+    h2 { color: #bbc3c8; font-family: 'Manrope', sans-serif;  margin: 0; font-size: 60px;}
+  }
+  @-webkit-keyframes fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+ 
+body {
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+a { color: #7FD736;  text-decoration: none; }
