@@ -35,7 +35,7 @@ span{
     pointer-events: none;
 }
 .glass {
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -123,8 +123,8 @@ span{
       display:none;
     }
     li { color: #bbc3c8; font-family: 'Manrope'; font-size: 15px; line-height: 26px; text-indent: 30px; margin: 0; }
-    h1 { color: #bbc3c8; font-family: 'Ostrovsky';  margin: 0; }
-    h2 { color: #bbc3c8; font-family: 'Ostrovsky';  margin: 0; }
+    h1 { color: #bbc3c8; font-family: 'Manrope';  margin: 0;font-size: 1.5rem }
+    h2 { color: #bbc3c8; font-family: 'Manrope';  margin: 0; }
   }
 @keyframes spin {
     0% {
